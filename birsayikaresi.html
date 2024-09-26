@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girilen iki sayının karesinin alınması</title>
+</head>
+<body>
+    
+    <script>
+
+        var sayi, kare; //değişkenler tanımlandı.
+        sayi=Number(prompt("Bir sayı giriniz:")); //kullanıcıdan sayı istendi ve "sayi" değişkenine atandı.
+        //kullanıcıdan alınan değerler her zaman "string" veri tipindedir. Bu nedenle alınan değeri "number" veri tipine dönüştürmemiz gerekmektedir.
+        //bu projede kullanıcıdan tek bir sayı değeri istendiği için veri tipi dönüştürmeden de kod doğru çalışacaktır. Ancak dönüşüm yapılması her zaman iyi olacaktır.
+        kare= sayi * sayi; //"kare" değişkeni tanımlandı.
+        alert("Sayı:"+ sayi + " " + "Sayının karesi: " + kare); //işlem sonucu mesaj kusuna yazdırıldı.
+
+    </script>
+    
+</body>
+</html>
