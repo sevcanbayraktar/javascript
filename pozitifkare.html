@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadece pozitif sayıların karesini alan JS kodu</title>
+</head>
+<body>
+    <script>
+
+        var sayi, kare;
+        sayi = Number(prompt("Bir sayı giriniz:")) ; //Kullanıcıdan sayı girişi istendi ve bu sayı "Number" veri tipine dönüştürülerek "sayi" değişkenine atandı.
+
+        if(sayi<0) //if sordusu yapıldı. 
+        {
+            alert("Sayı negatif!");
+            alert("Pozitif bir sayı giriniz!"); //Sayı negatif olduğu için pozitif sayı girişi istendi.
+        }
+        else
+        {
+            kare=sayi*sayi; //kare değişkeni tanımlandı.
+            alert("Sayının karesi:"+ kare); //sonuç mesaj kutusuna yazdırıldı.
+        }
+    </script>
+    
+</body>
+</html>
