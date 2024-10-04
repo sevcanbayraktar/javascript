@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For döngüsü ile sıfırdan n'e kadar olan sayıların toplamını ekrana yazdıran JS kodu.</title>
+</head>
+<body>
+
+    <script>
+        var sayac, n, toplam=0; //Değişkenler tanımlandı.
+        n=Number(prompt("Bir sayı giriniz:")); //Kullanıcıdan bir sayı değeri istendi.
+
+        for(sayac=0; sayac<=n; sayac+=2) //for döngüsü tanımlandı.
+        {
+            toplam+=sayac; //"sayac" değeri "toplam" değeri ile toplanarak tekrar "toplam" değerine atandı.("toplam=toplam+sayac" formülü de kullanılabilir.)  
+            document.write("Sayaç:"+sayac+" Toplam:"+toplam+"<br>"); //Değerler ekrana yazdırıldı. Değerlerin alt alta yazması için "br" etiketi kullanıldı.
+        }
+        document.write("Son toplam:"+toplam); //Son toplam değerini ekrana yazdırdık.  
+    </script>
+    
+</body>
+</html>

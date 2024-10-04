@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For döngüsü ile sıfırdan n'e kadar olan sayıları ekrana yazdıran JS kodu.</title>
+</head>
+<body>
+
+    <script>
+        var sayac, n; //Değişkenler tanımlandı.
+        n=Number(prompt("Bir sayı giriniz:")); //Kullanıcıdan bir sayı değeri istendi.
+
+        for(sayac=0; sayac<=n; sayac+=2) //for döngüsü tanımlandı.
+        {
+            document.write(sayac+"<br>"); //Değerler ekrana yazdırıldı. Değerlerin alt alta yazması için "br" etiketi kullanıldı.
+        }
+    </script>
+    
+</body>
+</html>

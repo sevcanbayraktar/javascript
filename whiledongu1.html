@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1'den 20'ye kadar olan sayıların toplamının while döngüsü ile bulunması.</title>
+</head>
+<body>
+    <script>
+        var sayac=1, toplam=0; //değişkenler tanımlandı.
+
+        while(sayac<=20) //döngü tanımlanması.
+        {
+            document.write("Sayaç:"+sayac+"<br>"); //sayac değerleri ekrana yazdırıldı.
+            toplam+=sayac;   //toplam değişkenin tanımlanması.
+            sayac++; //sayac değeri her döngü sonunda bir arttırıldı.
+        }
+        document.write("Toplam:"+toplam); //toplam değeri ekrana yazdırıldı.
+    </script>
+    
+</body>
+</html>
