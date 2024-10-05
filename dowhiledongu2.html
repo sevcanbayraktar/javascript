@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While döngüsü ile 1'den 15'e kadar olan sayıların toplamını bulan JS kodu.</title>
+</head>
+<body>
+    <script>
+        var sayac=1, toplam=0; //değişkenler tanımlandı.
+
+        do{
+            toplam+=sayac; //"toplam" değeri tanımlandı. Sayaç değeri toplam değeri ile toplanıp tekrar toplam değerine atandı.
+            document.write("Sayaç:"+sayac+"<br>"); //"sayac" değeri ekrana yazdırıldı.
+            sayac++; //"sayac" degeri artırıldı.
+            
+        }while(sayac<=15); //while ile döngümüzün 15'e kadar olması sağlandı (15 dahil).
+        document.write("Toplam:"+toplam); //toplam değeri ekrana yazdırıldı.
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İki sayı arasındaki sayıların tolamını bulan JS kodu.</title>
+</head>
+<body>
+    <script>
+        var x, y, toplam=0; //değişkenler tanımlandı.
+
+        x=Number(prompt("Bir x değeri giriniz:")); //x değeri kullanıcıdan alındı.
+        y=Number(prompt("Bir y değeri giriniz:")); //y değeri kullanıcıdan alındı.
+        document.write("x değeri: "+x+"<br>"); //x değeri ekrana yazdırıldı.
+        document.write("y değeri: "+y+"<br>"); //y değeri ekrana yazdırıldı.
+
+        while(x<=y)
+        { 
+            toplam+=x; //toplam formülü tanımlandı. Toplama işlemine x ve y değerleri de dahil edilir.
+            x++; 
+        }
+        document.write("Toplam:"+toplam); //toplam değeri ekrana yazdırıldı.
+    </script>
+    
+</body>
+</html>
