@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N kadar merhaba yazdıran fonsiyon kodu.</title>
+</head>
+<body>
+    <script>
+        function merhaba(){
+            document.write("Merhaba<br>"); //fonksiyonumuz tanımlandı.
+        }
+
+        var N; //kullanıcıdan alınacak olan değişken tanımlandı.
+        N=Number(prompt("Bir sayı giriniz:")); //kullanıcıdan bir sayı istendi.
+
+        for(var i=1; i<=N; i++){ //for döngüsü ile kullanıcıdan alınan sayı kadar döngü oluşturuldu.
+            merhaba();
+        }
+    </script>
+</body>
+</html>
