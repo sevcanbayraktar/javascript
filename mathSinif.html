@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math sınıfı ile bir çemberin alanı ve çevresini hesaplama.</title>
+</head>
+<body>
+    <script>
+        var r=Number(prompt("Bir yarıçap değeri giriniz:"));
+        var alan=Math.PI*Math.pow(r,2); //"math.PI" ile pi sayısını, "math.pow" ile üssü (r kare) durumunu gerçekleştirdik.
+        var cevre=2*Math.PI*r;
+        document.write("Yarıçap:"+r+"<br>"+"Alan:"+alan+"<br>"+"Çevre:"+cevre);
+    </script>
+    
+</body>
+</html>

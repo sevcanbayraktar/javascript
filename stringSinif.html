@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String sınıfını kullanarak alt alta isim yazdırma.</title>
+</head>
+<body>
+    <script>
+        var isim="Sevcan Bayraktar"; //yazılacak olan isim tanımlandı.
+        var uzunluk=isim.length; //isim değişkeninin uzunluğunu tutacak olan değişken tanımlandı.
+        for(var i=0; i<uzunluk; i++) //döngünün isim uzunluğu kadar olması sağlandı.
+        {
+            document.write(isim.charAt(i)+"<br>"); //ekrana yazdırma yapıldı. ".charAt" i'inci karakteri ekrana yazdırır.
+        }
+    </script>
+</body>
+</html>
