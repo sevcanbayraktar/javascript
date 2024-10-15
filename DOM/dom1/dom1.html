@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/renkli.jpg"   alt="renkli" id="avrupa" onmouseover="siyah()" onmouseout="renkli()">
+    <!-- "onmouseover" mouse görselin üzerindeyken yapılması gereken işlemleri, "onmouseout" mouse görsel üzerinde değil iken yapılması gereken işlemleri tanımlar. -->
+    <!-- burada mouse görsel üzerine gelince "siyah" fonksiyonunun çalışmasını, diğer durumda renkli fonksiyonunun çalışmasını sağladık.-->
+
+    <script>
+
+        function renkli(){
+            document.getElementById("avrupa").src="img/renkli.jpg"; //id'si avrupa olan görsel için fonksiyonlar yazıldı.
+                                                                    //bu fonksiyonların bir tanesine renkli görsel diğerine siyah görsel eklendi.
+        }
+        
+        function siyah(){
+            document.getElementById("avrupa").src="img/siyah.jpg";    
+        }
+    </script>
+</body>
+</html>
