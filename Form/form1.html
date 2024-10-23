@@ -20,8 +20,20 @@
             {
               alert("Lütfen bir sayı giriniz!!")
             }
-            var kare=sayi*sayi; //kare alma işlemi yanımlandı.
-            document.getElementById("kare").innerHTML=kare; //id'si "kare" olan elemanın değeri "kare" değişkeni ile değiştirldi.
+            else
+            {
+              sayi=Number(sayi); //girilen değer number değişkenine dönüştürüldü.
+              if(sayi<=0)
+              {
+                alert("Pozitif bir sayı giriniz!!");   //sayı değeri sıfır veya sıfırdan küçük ise pozitif sayı uyarı yapılacak.
+              }
+              else
+              {
+                var kare=sayi*sayi; //kare alma işlemi yanımlandı.
+                document.getElementById("kare").innerHTML=kare; //id'si "kare" olan elemanın değeri "kare" değişkeni ile değiştirldi.
+              }
+            }
+            
         }
       </script>                                                        
     
