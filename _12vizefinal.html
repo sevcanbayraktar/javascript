@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vize-final notu hesaplama.</title>
+</head>
+<body>
+    <script>
+
+        var v1, v2, final, vizeort, finalort, ort; //değişkenler.
+
+        v1=Number(prompt("Birinci vize notunu giriniz:")); //kullanıcıdan birinci vize değeri alındı.
+        v2=Number(prompt("İkinci vize notunu giriniz:")); //kullanıcıdan ikinci vize değeri alındı.
+        final=Number(prompt("Final notunu giriniz:")); //kullanıcıdan final değeri alındı.
+
+        vizeort= ((v1+v2)*0.4); //vize formülü tanımlandı.
+        finalort= final*0.6; //final formülü tanımlandı.
+        ort=vizeort+finalort; //ortalama formülü tanımlandı.
+
+        if (ort>=50) //ortalama 50 veya üstündeyse mesaj kutusuna "geçti" yazdırıldı. Ortalama 50 altında ise mesaj kutusuna "kaldı" yazdırıldı.
+            {
+                alert("Notunuz:"+ort+" Sonuç: Geçti"); 
+            }
+        else
+            {
+                alert("Notunuz:"+ort+" Sonuç: Kaldı");
+            }
+    </script>
+    
+</body>
+</html>

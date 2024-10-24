@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dikdörtgenin alanının ve çevresinin hesaplanması</title>
+</head>
+<body>
+
+    <script>
+
+        var kisaKenar, uzunKenar, cevre, alan; //değişkenler
+        kisaKenar=Number(prompt("Kısa kenar uzunluğunu giriniz:")); //kısa kenar değeri kullanıcıdan istendi ve girilen değer "number" veri tipine dönüştürüldü.
+        uzunKenar=Number(prompt("Uzun kenar uzunluğunu giriniz:")); //uzun kenar değeri kullanıcıdan istendi ve girilen değer "number" veri tipine dönüştürüldü.
+        cevre = ((kisaKenar*2)+(uzunKenar*2)); //çevre formülü tanımlandı.
+        alan = (kisaKenar*uzunKenar); //alan formülü tanımlandı.
+        alert("Kısa kenar:"+ kisaKenar+ " Uzun kenar:"+ uzunKenar+ " Çevre:"+cevre+ " Alan:"+alan) //değerler mesaj kutusuna yazdırıldı.
+
+    </script>
+
+</body>
+</html>
