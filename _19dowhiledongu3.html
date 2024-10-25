@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do While döngüsü ile sadece pozitif sayıların karesini alan JS kodu.</title>
+    <title>Do-While döngüsü ile sadece pozitif sayıların karesini alan JS kodu.</title>
 </head>
 <body>
+
     <script>
         var sayi, kare; //değişkenler tanımlandı.
         do{
             sayi = Number(prompt("Bir sayı giriniz:")); //kullanıcıdan bir sayı istendi.
-            if(sayi<=0) //if komutu ile girilen sayının negatif olması durumunda uyarı yazısı yazdırıldı.
+            if(sayi<=0) //if sorgusu ile girilen sayının negatif olma durumu kontrol edildi.
             {
                 alert("Lütfen pozitif bir sayı giriniz!"); //mesaj kutusuna uyarı yazısı yazdırıldı.
             }
         }while(sayi<=0);
-        kare = (sayi*sayi); //kare değişkenine atama yapıldı.
+        kare = (sayi*sayi); //kare formülü tanımlandı.
         document.write("Sayınız:"+sayi+" Karesi:"+kare); //sonuçlar ekrana yazdırıldı.
     </script>
+
 </body>
 </html>

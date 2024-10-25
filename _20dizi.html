@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kullanıcıdan alınan değerleri diziye atayan ve bu değerleri toplayan JS kodu.</title>
 </head>
 <body>
+
     <script>
         var sayi=new Array(5); //5 elemanlı bir dizi oluşturuldu.
-        var toplam=0; //toplam değişkeni tanımlandı.
+        var toplam=0; //toplam formülü tanımlandı.
         for (var i=0; i<=5; i++)
         {
             sayi[i]=Number(prompt(i+" sayı:"));  //for döngüsü ile kullanıcıdan 5 adet sayı istendi.
             toplam+=sayi[i]; //Kullanıcıdan alınan sayılar toplam değişkenine atandı.
-            document.write(i+". sayı:"+sayi[i]+"<br>"); //sayılar ekrana yazdırıldı.
+            document.write(i+". sayı:"+sayi[i]+"<br>"); //Sayılar ekrana yazdırıldı.
         }
         document.write("Toplam:"+toplam); //toplam değeri ekrana yazdırıldı.    
     </script>
+
 </body>
 </html>

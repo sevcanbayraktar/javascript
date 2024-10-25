@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faktöriyel alan fonksiyon.</title>
 </head>
 <body>
+
     <script>
         function fakt(a){
             var faktoriyel=1;
             for(var i=1; i<=a; i++)
             {   
-                faktoriyel*=i;
+                faktoriyel*=i; //faktöriyel işlemi tanımlandı.
             }
-            return faktoriyel;
+            return faktoriyel; //faktöriyel değeri döndürüldü.
         }
         var n=Number(prompt("Bir sayı giriniz:"));
-        document.write(n+"!:"+fakt(n));
+        document.write(n+"!:"+fakt(n)); //sonuç ekrana yazdırıldı.
     </script>
+
 </body>
 </html>
