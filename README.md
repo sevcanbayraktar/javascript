@@ -83,3 +83,6 @@ Burada math sınıfı kullanılarak bir çemberin alanını ve çevresini hesapl
 ---------------------------------------------------------
 28. (_28stringSinif.html) <br>
 Burada string sınıfı kullanılarak değişken olarak tanımlanmış kelimeleri alt alta sıralayan JavaScript kodu yazılmıştır.
+---------------------------------------------------------
+29. (_28stringSinif.html) <br>
+Burada form elemanı kullanılarak girilen sayının karesini alan JavaScript kodu yazılmıştır.
