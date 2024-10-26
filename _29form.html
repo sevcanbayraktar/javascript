@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elemanı ile girilen sayının karesini alan JS kodu.</title>
+</head>
+<body>
+  <!-- form başlangıcı -->
+      <form>
+        Sayı:<input type="text" id="sayi1"> <br> 
+        Karesi:<span id="kare"> </span><br>
+        <input type="button" value="Hesapla" onclick="kare()"> <br>
+      </form>      
+  <!-- form bitişi -->
+      <script>
+        function kare(){
+            var sayi=document.getElementById("sayi1").value; //id'si "sayi1" olan elemanın değeri alındı ve "sayi" değişkenine atandı.
+            if(sayi=="") //form kutusu boş bırakılırsa mesaj kutusu ile uyarı mesajı verilmesi istendi.
+            {
+              alert("Lütfen bir sayı giriniz!!")
+            }
+            else
+            {
+              sayi=Number(sayi); //girilen değer number değişkenine dönüştürüldü.
+              if(sayi<=0)
+              {
+                alert("Pozitif bir sayı giriniz!!");   //sayı değeri sıfır veya sıfırdan küçük ise pozitif sayı uyarı yapılacak.
+              }
+              else
+              {
+                var kare=sayi*sayi; //kare alma işlemi tanımlandı.
+                document.getElementById("kare").innerHTML=kare; //id'si "kare" olan elemanın değeri "kare" değişkeni ile değiştirldi.
+              }
+            }
+            
+        }
+      </script>                                                        
+    
+</body>
+</html>
